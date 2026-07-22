@@ -1,0 +1,362 @@
+/* =====================================================
+   SUP de FLE
+   layout.css
+===================================================== */
+
+/* ===============================
+SECTION
+=============================== */
+
+section{
+
+    padding:var(--space-2xl) 0;
+
+    position:relative;
+
+}
+
+/* ===============================
+CONTAINERS
+=============================== */
+
+.container{
+
+    width:min(92%, var(--container));
+
+    margin-inline:auto;
+
+}
+
+.small-container{
+
+    width:min(90%,900px);
+
+    margin-inline:auto;
+
+}
+
+.large-container{
+
+    width:min(96%,1440px);
+
+    margin-inline:auto;
+
+}
+
+/* ===============================
+DISPLAY
+=============================== */
+
+.flex{
+
+    display:flex;
+
+}
+
+.flex-center{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.flex-between{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.flex-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/* ===============================
+GRID
+=============================== */
+
+.grid{
+
+    display:grid;
+
+    gap:32px;
+
+}
+
+.grid-2{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:40px;
+
+}
+
+.grid-3{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.grid-4{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+/* ===============================
+GAP
+=============================== */
+
+.gap-sm{
+
+    gap:16px;
+
+}
+
+.gap-md{
+
+    gap:24px;
+
+}
+
+.gap-lg{
+
+    gap:40px;
+
+}
+
+/* ===============================
+TEXT
+=============================== */
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.text-left{
+
+    text-align:left;
+
+}
+
+.text-right{
+
+    text-align:right;
+
+}
+
+/* ===============================
+WIDTH
+=============================== */
+
+.w-100{
+
+    width:100%;
+
+}
+
+.h-100{
+
+    height:100%;
+
+}
+
+/* ===============================
+MARGIN
+=============================== */
+
+.mt-sm{
+
+    margin-top:16px;
+
+}
+
+.mt-md{
+
+    margin-top:32px;
+
+}
+
+.mt-lg{
+
+    margin-top:60px;
+
+}
+
+.mt-xl{
+
+    margin-top:90px;
+
+}
+
+.mb-sm{
+
+    margin-bottom:16px;
+
+}
+
+.mb-md{
+
+    margin-bottom:32px;
+
+}
+
+.mb-lg{
+
+    margin-bottom:60px;
+
+}
+
+.mb-xl{
+
+    margin-bottom:90px;
+
+}
+
+/* ===============================
+PADDING
+=============================== */
+
+.p-sm{
+
+    padding:16px;
+
+}
+
+.p-md{
+
+    padding:32px;
+
+}
+
+.p-lg{
+
+    padding:48px;
+
+}
+
+/* ===============================
+POSITION
+=============================== */
+
+.relative{
+
+    position:relative;
+
+}
+
+.absolute{
+
+    position:absolute;
+
+}
+
+/* ===============================
+OVERFLOW
+=============================== */
+
+.overflow-hidden{
+
+    overflow:hidden;
+
+}
+
+/* ===============================
+BACKGROUND
+=============================== */
+
+.bg-white{
+
+    background:var(--white);
+
+}
+
+.bg-light{
+
+    background:var(--light);
+
+}
+
+.bg-primary{
+
+    background:var(--primary);
+
+}
+
+.bg-dark{
+
+    background:var(--dark);
+
+}
+
+/* ===============================
+BORDER RADIUS
+=============================== */
+
+.radius-sm{
+
+    border-radius:var(--radius-sm);
+
+}
+
+.radius-md{
+
+    border-radius:var(--radius-md);
+
+}
+
+.radius-lg{
+
+    border-radius:var(--radius-lg);
+
+}
+
+.radius-xl{
+
+    border-radius:var(--radius-xl);
+
+}
+
+/* ===============================
+SHADOWS
+=============================== */
+
+.shadow-sm{
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.shadow-md{
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.shadow-lg{
+
+    box-shadow:var(--shadow-lg);
+
+}

@@ -1,0 +1,112 @@
+/* =====================================================
+   SUP de FLE
+   Design System
+   variables.css
+===================================================== */
+
+:root{
+
+/* ===============================
+COLORS
+=============================== */
+
+--primary:#005BBB;
+--primary-dark:#004A96;
+--primary-light:#EAF4FF;
+
+--secondary:#E63946;
+--secondary-dark:#C71F37;
+
+--dark:#0F172A;
+
+--text:#475569;
+
+--light:#F8FAFC;
+
+--white:#FFFFFF;
+
+--gray:#CBD5E1;
+
+--border:#E2E8F0;
+
+--success:#22C55E;
+
+--warning:#F59E0B;
+
+
+/* ===============================
+TYPOGRAPHY
+=============================== */
+
+--font:'Inter',sans-serif;
+
+--fs-xs:.85rem;
+
+--fs-sm:1rem;
+
+--fs-md:1.15rem;
+
+--fs-lg:1.4rem;
+
+--fs-xl:2rem;
+
+--fs-2xl:3rem;
+
+--fs-3xl:4.2rem;
+
+
+/* ===============================
+SPACING
+=============================== */
+
+--space-xs:8px;
+
+--space-sm:16px;
+
+--space-md:24px;
+
+--space-lg:40px;
+
+--space-xl:70px;
+
+--space-2xl:120px;
+
+
+/* ===============================
+RADIUS
+=============================== */
+
+--radius-sm:12px;
+
+--radius-md:18px;
+
+--radius-lg:26px;
+
+--radius-xl:40px;
+
+
+/* ===============================
+SHADOWS
+=============================== */
+
+--shadow-sm:0 8px 20px rgba(15,23,42,.05);
+
+--shadow-md:0 15px 40px rgba(15,23,42,.08);
+
+--shadow-lg:0 25px 60px rgba(15,23,42,.12);
+
+
+/* ===============================
+TRANSITIONS
+=============================== */
+
+--transition:.35s ease;
+
+
+/* ===============================
+MAX WIDTH
+=============================== */
+
+--container:1280px;
+
+}

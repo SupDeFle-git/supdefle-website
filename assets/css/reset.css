@@ -1,0 +1,249 @@
+/* =====================================================
+   SUP de FLE
+   reset.css
+===================================================== */
+
+/* ------------------------------
+Google Fonts
+------------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* ------------------------------
+Universal Reset
+------------------------------ */
+
+*,
+*::before,
+*::after{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+/* ------------------------------
+HTML
+------------------------------ */
+
+html{
+
+    scroll-behavior:smooth;
+
+    font-size:16px;
+
+    -webkit-text-size-adjust:100%;
+
+}
+
+/* ------------------------------
+BODY
+------------------------------ */
+
+body{
+
+    font-family:var(--font);
+
+    background:var(--white);
+
+    color:var(--text);
+
+    line-height:1.7;
+
+    overflow-x:hidden;
+
+    text-rendering:optimizeLegibility;
+
+    -webkit-font-smoothing:antialiased;
+
+    -moz-osx-font-smoothing:grayscale;
+
+}
+
+/* ------------------------------
+Images
+------------------------------ */
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+/* ------------------------------
+Links
+------------------------------ */
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+    transition:var(--transition);
+
+}
+
+/* ------------------------------
+Lists
+------------------------------ */
+
+ul,
+ol{
+
+    list-style:none;
+
+}
+
+/* ------------------------------
+Buttons
+------------------------------ */
+
+button{
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+}
+
+/* ------------------------------
+Inputs
+------------------------------ */
+
+input,
+textarea,
+select{
+
+    font:inherit;
+
+    outline:none;
+
+}
+
+/* ------------------------------
+Textarea
+------------------------------ */
+
+textarea{
+
+    resize:vertical;
+
+}
+
+/* ------------------------------
+Tables
+------------------------------ */
+
+table{
+
+    border-collapse:collapse;
+
+    border-spacing:0;
+
+}
+
+/* ------------------------------
+Selection
+------------------------------ */
+
+::selection{
+
+    background:var(--primary);
+
+    color:var(--white);
+
+}
+
+/* ------------------------------
+Scrollbar
+------------------------------ */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#EDF2F7;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:50px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--primary-dark);
+
+}
+
+/* ------------------------------
+Headings
+------------------------------ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    color:var(--dark);
+
+    font-weight:700;
+
+    line-height:1.2;
+
+}
+
+/* ------------------------------
+Paragraph
+------------------------------ */
+
+p{
+
+    color:var(--text);
+
+}
+
+/* ------------------------------
+Responsive Media
+------------------------------ */
+
+iframe,
+video{
+
+    max-width:100%;
+
+}
+
+/* ------------------------------
+Accessibility
+------------------------------ */
+
+:focus-visible{
+
+    outline:3px solid var(--primary);
+
+    outline-offset:3px;
+
+}

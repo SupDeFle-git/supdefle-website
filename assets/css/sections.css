@@ -1,0 +1,430 @@
+/* =====================================================
+   SUP de FLE
+   sections.css
+===================================================== */
+
+/* =====================================================
+HEADER
+===================================================== */
+
+.header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(14px);
+
+    border-bottom:1px solid var(--border);
+
+    transition:var(--transition);
+
+}
+
+.header.scrolled{
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.navbar{
+
+    height:90px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+.logo img{
+
+    width:58px;
+
+    height:58px;
+
+    object-fit:contain;
+
+}
+
+.logo-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.logo-title{
+
+    font-size:1.4rem;
+
+    font-weight:800;
+
+    color:var(--dark);
+
+}
+
+.logo-subtitle{
+
+    font-size:.82rem;
+
+    color:var(--text);
+
+}
+
+.nav-menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:34px;
+
+}
+
+.nav-link{
+
+    font-weight:600;
+
+    color:var(--dark);
+
+    position:relative;
+
+}
+
+.nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transition:var(--transition);
+
+}
+
+.nav-link:hover::after{
+
+    width:100%;
+
+}
+
+/* =====================================================
+HERO
+===================================================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#F8FBFF,#EEF5FF);
+
+    overflow:hidden;
+
+    padding-top:90px;
+
+}
+
+.hero-grid{
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.hero-title{
+
+    font-size:clamp(3rem,6vw,5rem);
+
+    line-height:1.05;
+
+    margin-bottom:28px;
+
+    color:var(--dark);
+
+}
+
+.hero-description{
+
+    font-size:1.2rem;
+
+    margin-bottom:40px;
+
+    max-width:650px;
+
+}
+
+.hero-actions{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.hero-image{
+
+    position:relative;
+
+}
+
+.hero-image img{
+
+    border-radius:32px;
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+/* Floating Cards */
+
+.floating-card{
+
+    position:absolute;
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:18px 24px;
+
+    box-shadow:var(--shadow-md);
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+.card-top{
+
+    top:40px;
+
+    left:-30px;
+
+}
+
+.card-bottom{
+
+    bottom:30px;
+
+    right:-25px;
+
+}
+
+/* =====================================================
+TRUSTED
+===================================================== */
+
+.trusted{
+
+    background:white;
+
+}
+
+.logo-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
+
+    gap:35px;
+
+    align-items:center;
+
+}
+
+.partner{
+
+    height:90px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    transition:var(--transition);
+
+    background:white;
+
+}
+
+.partner:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+/* =====================================================
+WHY FRANCE
+===================================================== */
+
+.why-france{
+
+    background:var(--light);
+
+}
+
+/* =====================================================
+WHY SUP DE FLE
+===================================================== */
+
+.why-supdefle{
+
+    background:white;
+
+}
+
+/* =====================================================
+SERVICES
+===================================================== */
+
+.services{
+
+    background:var(--light);
+
+}
+
+/* =====================================================
+PROCESS
+===================================================== */
+
+.process{
+
+    background:white;
+
+}
+
+/* =====================================================
+TESTIMONIALS
+===================================================== */
+
+.testimonials{
+
+    background:var(--light);
+
+}
+
+/* =====================================================
+FAQ
+===================================================== */
+
+.faq{
+
+    background:white;
+
+}
+
+/* =====================================================
+CTA
+===================================================== */
+
+.cta{
+
+    background:linear-gradient(180deg,#ffffff,#EEF5FF);
+
+}
+
+/* =====================================================
+FOOTER
+===================================================== */
+
+.footer{
+
+    background:var(--dark);
+
+    color:white;
+
+    padding:80px 0 40px;
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1fr;
+
+    gap:50px;
+
+}
+
+.footer h3{
+
+    color:white;
+
+    margin-bottom:20px;
+
+}
+
+.footer a{
+
+    color:#CBD5E1;
+
+}
+
+.footer a:hover{
+
+    color:white;
+
+}
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.12);
+
+    margin-top:60px;
+
+    padding-top:30px;
+
+    text-align:center;
+
+    color:#CBD5E1;
+
+}
