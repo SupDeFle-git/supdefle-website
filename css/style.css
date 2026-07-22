@@ -1,1 +1,390 @@
-body{margin:0;font-family:Arial}.hero{padding:80px;background:#f5f8fc}.container{width:min(1100px,90%);margin:auto}.btn{background:#d72638;color:#fff;padding:12px 20px;border-radius:30px;display:inline-block}
+/* ==========================================================
+   SUP de FLE
+   Study in France Consulting
+   Version 0.3
+========================================================== */
+
+/* ==========================
+   GOOGLE FONT
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    color:#16324F;
+
+    background:#F7F9FC;
+
+    line-height:1.7;
+
+}
+
+/* ==========================
+   COLORS
+========================== */
+
+:root{
+
+    --primary:#0B5FAE;
+
+    --secondary:#D72638;
+
+    --dark:#16324F;
+
+    --light:#F7F9FC;
+
+    --white:#FFFFFF;
+
+    --text:#415A77;
+
+    --success:#1DB954;
+
+    --radius:18px;
+
+    --shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+
+    padding:100px 0;
+
+    background:
+
+    linear-gradient(135deg,#F7F9FC 0%,#EAF3FC 100%);
+
+}
+
+.hero-content{
+
+    display:grid;
+
+    grid-template-columns:1.2fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+/* ==========================
+   BADGE
+========================== */
+
+.hero-badge{
+
+    display:inline-block;
+
+    padding:10px 20px;
+
+    background:white;
+
+    border-radius:50px;
+
+    color:var(--primary);
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+    box-shadow:var(--shadow);
+
+}
+
+/* ==========================
+   TITLES
+========================== */
+
+.hero h1{
+
+    font-size:64px;
+
+    line-height:1.05;
+
+    margin-bottom:30px;
+
+    color:var(--dark);
+
+}
+
+.hero-description{
+
+    font-size:20px;
+
+    color:var(--text);
+
+    margin-bottom:40px;
+
+    max-width:650px;
+
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:60px;
+
+}
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:18px 36px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    border-radius:50px;
+
+    transition:.35s;
+
+}
+
+.btn-primary{
+
+    background:var(--secondary);
+
+    color:white;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 35px rgba(215,38,56,.30);
+
+}
+
+.btn-secondary{
+
+    background:white;
+
+    color:var(--primary);
+
+    border:2px solid var(--primary);
+
+}
+
+.btn-secondary:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* ==========================
+   FEATURES
+========================== */
+
+.hero-features{
+
+    display:grid;
+
+    gap:25px;
+
+}
+
+.feature{
+
+    display:flex;
+
+    gap:18px;
+
+    align-items:flex-start;
+
+}
+
+.feature-icon{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:var(--success);
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-weight:700;
+
+    flex-shrink:0;
+
+}
+
+.feature strong{
+
+    display:block;
+
+    margin-bottom:5px;
+
+}
+
+.feature span{
+
+    color:var(--text);
+
+}
+
+/* ==========================
+   RIGHT CARD
+========================== */
+
+.hero-card{
+
+    background:white;
+
+    padding:45px;
+
+    border-radius:24px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.hero-card h3{
+
+    font-size:30px;
+
+    margin-bottom:25px;
+
+    color:var(--dark);
+
+}
+
+.hero-card ul{
+
+    list-style:none;
+
+}
+
+.hero-card li{
+
+    padding:12px 0;
+
+    border-bottom:1px solid #ECECEC;
+
+}
+
+.hero-card-button{
+
+    margin-top:35px;
+
+    display:block;
+
+    text-align:center;
+
+    background:var(--primary);
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:18px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.hero-card-button:hover{
+
+    background:var(--secondary);
+
+}
+
+/* ==========================
+   SPACING
+========================== */
+
+section{
+
+    padding:100px 0;
+
+}
+
+/* =====================================
+ANIMATIONS
+===================================== */
+
+.feature,
+.hero-card,
+.hero-badge,
+.btn{
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+    transition:.7s ease;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
