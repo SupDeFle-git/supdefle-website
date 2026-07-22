@@ -1,1 +1,332 @@
-/* v0.2 */
+/* =====================================================
+   SUP de FLE
+   animations.css
+===================================================== */
+
+/* =====================================================
+KEYFRAMES
+===================================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes fadeLeft{
+
+    from{
+
+        opacity:0;
+        transform:translateX(-40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateX(0);
+
+    }
+
+}
+
+@keyframes fadeRight{
+
+    from{
+
+        opacity:0;
+        transform:translateX(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateX(0);
+
+    }
+
+}
+
+@keyframes zoomIn{
+
+    from{
+
+        opacity:0;
+        transform:scale(.85);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:scale(1);
+
+    }
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+@keyframes rotateSlow{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* =====================================================
+INITIAL STATE
+===================================================== */
+
+.fade-up,
+.fade-left,
+.fade-right,
+.zoom{
+
+    opacity:0;
+
+}
+
+/* =====================================================
+VISIBLE STATE
+===================================================== */
+
+.fade-up.visible{
+
+    animation:fadeUp .9s ease forwards;
+
+}
+
+.fade-left.visible{
+
+    animation:fadeLeft .9s ease forwards;
+
+}
+
+.fade-right.visible{
+
+    animation:fadeRight .9s ease forwards;
+
+}
+
+.zoom.visible{
+
+    animation:zoomIn .8s ease forwards;
+
+}
+
+/* =====================================================
+DELAYS
+===================================================== */
+
+.delay-1{
+
+    animation-delay:.15s;
+
+}
+
+.delay-2{
+
+    animation-delay:.30s;
+
+}
+
+.delay-3{
+
+    animation-delay:.45s;
+
+}
+
+.delay-4{
+
+    animation-delay:.60s;
+
+}
+
+.delay-5{
+
+    animation-delay:.75s;
+
+}
+
+/* =====================================================
+FLOAT
+===================================================== */
+
+.float{
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+/* =====================================================
+PULSE
+===================================================== */
+
+.pulse{
+
+    animation:pulse 2.5s infinite;
+
+}
+
+/* =====================================================
+ROTATION
+===================================================== */
+
+.rotate{
+
+    animation:rotateSlow 18s linear infinite;
+
+}
+
+/* =====================================================
+BUTTON
+===================================================== */
+
+.btn{
+
+    transition:
+    transform .30s,
+    box-shadow .30s,
+    background .30s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+/* =====================================================
+CARD
+===================================================== */
+
+.card{
+
+    transition:
+    transform .35s,
+    box-shadow .35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+/* =====================================================
+IMAGE
+===================================================== */
+
+img{
+
+    transition:transform .5s ease;
+
+}
+
+.image-hover{
+
+    overflow:hidden;
+
+}
+
+.image-hover:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/* =====================================================
+LINK
+===================================================== */
+
+a{
+
+    transition:.3s;
+
+}
+
+/* =====================================================
+REDUCE MOTION
+===================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+*{
+
+animation:none !important;
+
+transition:none !important;
+
+scroll-behavior:auto !important;
+
+}
+
+}
